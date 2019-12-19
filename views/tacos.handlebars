@@ -1,0 +1,41 @@
+
+<h1>TACO TUESDAY!!!</h1>
+
+<img src ="/images/tacos.png" width="400" height="300">
+
+<h2>Tacos that are not eaten!</h2>
+
+<ul>
+  {{#each tacos}}
+    {{#unless eaten}}
+      {{> littleTacos/liltacos eaten=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Tacos that have been smashed!</h2>
+
+<ul>
+  {{#each tacos}}
+    {{#if eaten}}
+      {{> littleTacos/liltacos eaten=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Taco</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="taco">Taco Style:</label>
+    <input type="text" id="taco" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="eaten">Eaten?</label><br>
+    <input type="radio" name="eaten" value="1" checked> Eaten!<br>
+    <input type="radio" name="eaten" value="0"> Stuffed!
+  </div>
+
+  <button type="submit">Add Taco</button>
+</form>

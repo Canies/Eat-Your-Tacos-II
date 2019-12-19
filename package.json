@@ -1,0 +1,25 @@
+{
+  "name": "Eat-Your-Tacos-II",
+  "version": "1.0.0",
+  "description": "Second Attempt on Tacos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Canies/Eat-Your-Tacos-II.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Canies/Eat-Your-Tacos-II/issues"
+  },
+  "homepage": "https://github.com/Canies/Eat-Your-Tacos-II#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
